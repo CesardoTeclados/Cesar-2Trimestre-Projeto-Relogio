@@ -1,48 +1,49 @@
 <div class="conteudo-principal">
-    <h1 class="titulo-principal">
-      Datas <span>Importantes</span>
-    </h1>
+    <!DOCTYPE html>
+<html lang="pt-br">
 
-    <div class="botoes">
-      <button class="botao ativo" onclick="trocarAba(0)">Históricas</button>
-      <button class="botao" onclick="trocarAba(1)">Religiosas</button>
-      <button class="botao" onclick="trocarAba(2)">Pessoais</button>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <div class="abas-textos">
-      <div class="abas-conteudo ativo">
-        <h2 class="abas-conteudo-titulo-principal">Marcos Históricos</h2>
-        <p> 7 de setembro (Independência do Brasil), Tiradentes (21 de abril), Dia do Trabalho (1 de maio), Proclamação da República (15 de novembro), 
-        </p>
-      </div>
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Cursos na Alura</button>
+            <button class="botao ativo">Criar projetos em Javascript</button>
+            <button class="botao ativo">Criar um portfolio</button>
+            <button class="botao ativo">Atualizar meu currículo</button>
+        </div>
+        </div>
+        <div class="abas-textos">
+            <div class="abas-conteudo ativo">
+                <h3 class="abas-conteudo-titulo-principal">Estudar para objetivo 1</h3>
+                <h4 class="abas-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador">
+                    
+                </div>
+            </div>
+            <div class="abas-conteudo ativo">
+                <h3 class="abas-conteudo-titulo-principal">Estudar para o objetivo 2</h3>
+                <h4 class="abas-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+            <div class="abas-conteudo ativo">
+                <h3 class="abas-conteudo-titulo-principal">Estudar para o objetivo 3</h3>
+                <h4 class="abas-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+            <div class="abas-conteudo ativo">
+                <h3 class="abas-conteudo-titulo-principal">Estudar para o objetivo 4</h3>
+                <h4 class="abas-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+        </div>
+    </section>
 
-      <div class="abas-conteudo">
-        <h2 class="abas-conteudo-titulo-principal">Datas Religiosas</h2>
-        <p>
-           24 de junho (Festa de São João), Nossa Senhora Aparecida (12 de outubro) e Natal (25 de dezembro).
-        </p>
-      </div>
-
-      <div class="abas-conteudo">
-        <h2 class="abas-conteudo-titulo-principal">Datas Pessoais</h2>
-        <p> Meu aniversario (16 de julho)
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const botoes = document.querySelectorAll(".botao");
-    const conteudos = document.querySelectorAll(".abas-conteudo");
-
-    function trocarAba(indice) {
-      botoes.forEach(botao => botao.classList.remove("ativo"));
-      conteudos.forEach(conteudo => conteudo.classList.remove("ativo"));
-
-      botoes[indice].classList.add("ativo");
-      conteudos[indice].classList.add("ativo");
-    }
-  </script>
-
+<script src="main.js"></script>
 </body>
+
 </html>
