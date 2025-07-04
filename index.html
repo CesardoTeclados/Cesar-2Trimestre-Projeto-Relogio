@@ -1,36 +1,48 @@
 <div class="conteudo-principal">
-  <h1 class="titulo-principal">
-    <span>Datas Importantes</span>
-  </h1>
+    <h1 class="titulo-principal">
+      Datas <span>Importantes</span>
+    </h1>
 
-  <div class="botoes">
-    <button class="botao ativo">Históricas</button>
-    <button class="botao">Religiosas</button>
-    <button class="botao">Pessoais</button>
-  </div>
-
-  <div class="abas-textos">
-    <div class="abas-conteudo ativo">
-      <h2 class="abas-conteudo-titulo-principal">Marcos Históricos</h2>
-      <p>
-        7 de setembro (Independência do Brasil), Dia Mundial da Paz (1 de janeiro), Tiradentes (21 de abril), Proclamação da República (15 de novembro),Dia da Mulher (8 de março) e Dia da Consciência Negra (20 de novembro).
-      </p>
+    <div class="botoes">
+      <button class="botao ativo" onclick="trocarAba(0)">Históricas</button>
+      <button class="botao" onclick="trocarAba(1)">Religiosas</button>
+      <button class="botao" onclick="trocarAba(2)">Pessoais</button>
     </div>
 
-    <div class="abas-conteudo">
-      <h2 class="abas-conteudo-titulo-principal">Datas Religiosas</h2>
-      <p>
-        Festas populares, dias de santos, feriados culturais e patrimônios imateriais. 
-        Por exemplo: 24 de junho (Festa de São João), Nossa Senhora Aparecida (12 de outubro) e Natal (25 de dezembro).
-      </p>
-    </div>
+    <div class="abas-textos">
+      <div class="abas-conteudo ativo">
+        <h2 class="abas-conteudo-titulo-principal">Marcos Históricos</h2>
+        <p> 7 de setembro (Independência do Brasil), Tiradentes (21 de abril), Dia do Trabalho (1 de maio), Proclamação da República (15 de novembro), 
+        </p>
+      </div>
 
-    <div class="abas-conteudo">
-      <h2 class="abas-conteudo-titulo-principal">Datas Pessoais</h2>
-      <p>
-        Cada pessoa tem datas que representam conquistas, perdas e recomeços. 
-        Pode ser o dia do nascimento, formatura, casamento ou uma viagem marcante.
-      </p>
+      <div class="abas-conteudo">
+        <h2 class="abas-conteudo-titulo-principal">Datas Religiosas</h2>
+        <p>
+           24 de junho (Festa de São João), Nossa Senhora Aparecida (12 de outubro) e Natal (25 de dezembro).
+        </p>
+      </div>
+
+      <div class="abas-conteudo">
+        <h2 class="abas-conteudo-titulo-principal">Datas Pessoais</h2>
+        <p> Meu aniversario (16 de julho)
+        </p>
+      </div>
     </div>
   </div>
-</div>
+
+  <script>
+    const botoes = document.querySelectorAll(".botao");
+    const conteudos = document.querySelectorAll(".abas-conteudo");
+
+    function trocarAba(indice) {
+      botoes.forEach(botao => botao.classList.remove("ativo"));
+      conteudos.forEach(conteudo => conteudo.classList.remove("ativo"));
+
+      botoes[indice].classList.add("ativo");
+      conteudos[indice].classList.add("ativo");
+    }
+  </script>
+
+</body>
+</html>
