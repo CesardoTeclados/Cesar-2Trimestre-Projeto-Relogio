@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #c30b36;
-    --branco: #FFFFFF;
-    --botao-ativo: #5e5237;
-    --botao-inativo: rgba(220, 244, 39, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --cor-de-fundo: #F5F7FA;
+    --verde: #007ACC;
+    --branco: #1E1E1E;
+    --botao-ativo: #005A9E;
+    --botao-inativo: rgba(0, 122, 204, 0.3);
+    --texto-fundo: rgba(0, 122, 204, 0.1);
 }
 
 body {
@@ -14,7 +14,6 @@ body {
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -60,47 +59,47 @@ body {
     display: block;
 }
 
-.ativo{
+.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
-
 }
 
-.abas-textos{
+.abas-textos {
     background-color: var(--cor-de-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
 
-.botao.ativo{
+.botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
-.abas-conteudo.ativo{
+
+.abas-conteudo.ativo {
     display: block;
 }
 
-.abas-conteudo{
+.abas-conteudo {
     display: none;
 }
 
-.abas-conteudo-titulo-principal{
+.abas-conteudo-titulo-principal {
     font-size: 28px;
     text-align: center;
 }
 
-.abas-conteudo-titulo-secundario{
+.abas-conteudo-titulo-secundario {
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
 }
 
-@media screen and (mid-width:768px){
-    .botoes{
+@media screen and (mid-width:768px) {
+    .botoes {
         display: flex;
     }
-    .botao:first-child{
+
+    .botao:first-child {
         border-radius: 40px 0 0 0;
     }
-    
 }
